@@ -1,0 +1,16 @@
+{
+    "name": "dawn/phpss",
+    "authors": [
+        {
+            "name": "dawn",
+            "email": "250810491@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Server\\": "Server"
+        }
+    }
+}
