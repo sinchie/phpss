@@ -42,7 +42,7 @@ class RemoteConnection extends Connection
     public function connect()
     {
         // 创建异步连接
-        $this->socket = stream_socket_client("tcp://{$this->remote_address}", $errno, $errstr, 0, STREAM_CLIENT_ASYNC_CONNECT);
+        $this->socket = @stream_socket_client("tcp://{$this->remote_address}", $errno, $errstr, 0, STREAM_CLIENT_ASYNC_CONNECT);
         // 如果失败
         if(!$this->socket) {
             $this->status = self::STATUS_CLOSED;
