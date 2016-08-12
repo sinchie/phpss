@@ -1,4 +1,5 @@
 # php shadowsocks多用户服务端
+学习php网络编程，参考 workerman 练习之作
 
 ### 初始化
     composer update
@@ -16,3 +17,4 @@
     
 ### 关闭服务    
     php boot.php stop
+    
