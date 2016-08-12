@@ -1,8 +1,11 @@
 # php shadowsocks多用户服务端
 学习php网络编程，参考 workerman 练习之作
 
-### 依赖Event的扩展
-    php -m 如果没有event,请先安装Event扩展
+### 需要环境
+    php >= 5.4
+    Pcntl extension
+    Event extension
+    POSIX extension
 
 ### 初始化
     composer update
