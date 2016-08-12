@@ -231,6 +231,7 @@ class Master
             //记录信息
             self::$subs[$pid] = ['port' => $port, 'password' => $password];
         } elseif ($pid === 0) {
+            $this->resetStd();
             $sub = new Sub($port, $password);
             $sub->listen();
             $sub->event->loop();
